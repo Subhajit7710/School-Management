@@ -1,0 +1,69 @@
+{
+  "info": {
+    "_postman_id": "9b7ab6e3-e023-4f24-aa45-d8c718b7c815",
+    "name": "SchoolManagementApi",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49721211"
+  },
+  "item": [
+    {
+      "name": "Add School",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Vit School\",\r\n  \"address\": \"Vellore\",\r\n  \"latitude\": 12.9215,\r\n  \"longitude\": 77.5963\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/addSchool",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "addSchool"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List Schools",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/listSchools?latitude=12.9215&longitude=77.5963",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "listSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "12.9215"
+            },
+            {
+              "key": "longitude",
+              "value": "77.5963"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
