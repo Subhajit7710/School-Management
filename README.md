@@ -13,7 +13,10 @@ School Management System
 API Endpoints
 
 1)Add School
+
 POST /api/addSchool
+
+
 //BODY
 {
   "name": "Vit School",
